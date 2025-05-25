@@ -10,7 +10,7 @@ const MS_IN = Object.freeze({
 // Only returns true if n is a finite value of the 'number' type
 const isValidNumber = n => typeof n === 'number' && Number.isFinite(n)
 
-function secondsToTimeString(seconds) {
+export function secondsToTimeString(seconds) {
   /**
    * Format a 'number' of seconds as a human-readable string.
    * Supports up to three decimal places in milliseconds, trimmed.
